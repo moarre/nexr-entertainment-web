@@ -1,10 +1,10 @@
 import React from "react";
+import { motion } from "framer-motion";
 import styles from "./main-logo.module.scss";
 
 const NEXRVideo: React.FC = () => {
     return (
         <div className={styles.container}>
-            {/* SVG Definition (Only for Masking) */}
             <svg width="0" height="0">
                 <defs>
                     <clipPath id="textClip" clipPathUnits="userSpaceOnUse">
@@ -14,23 +14,34 @@ const NEXRVideo: React.FC = () => {
             </svg>
 
             <div className={styles.landingContent}>
-                <div className={styles.videoContainer}>
+                <motion.div 
+                    className={styles.videoContainer}
+                    initial={{ y: -200, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                >
                     <div className={styles.videoWrapper}>
-                        {/* Video with Clip Path */}
                         <video
                             autoPlay
                             loop
                             muted
                             className={styles.backgroundVideo}
-                            style={{ clipPath: "url(#textClip)", WebkitClipPath: "url(#textClip)" }}>
+                            style={{ clipPath: "url(#textClip)", WebkitClipPath: "url(#textClip)" }}
+                        >
                             <source src="/vr-video.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                </div>
-                <div className={styles.textContent}>
+                </motion.div>
+
+                <motion.div 
+                    className={styles.textContent}
+                    initial={{ y: 200, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                >
                     <div className={styles.newText}>WILL BE COMING SOON</div>
-                </div>
+                </motion.div>
             </div>
         </div>
     );
