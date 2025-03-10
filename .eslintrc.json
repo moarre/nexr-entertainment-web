@@ -1,0 +1,15 @@
+{
+    "extends": ["next/core-web-vitals", "next", "prettier"],
+    "rules": {
+        "no-unused-vars": "error",
+        "no-unused-labels": "error",
+        "no-unused-expressions": "error",
+        "no-fallthrough": "error",
+        "@next/next/no-async-client-component": "error",
+        "@next/next/no-assign-module-variable": "error",
+        "@next/next/no-css-tags": "error",
+        "react-hooks/exhaustive-deps": "off",
+        "@next/next/no-img-element": "off"
+    },
+    "ignorePatterns": ["*.d.ts", "api-endpoints.ts"]
+}
