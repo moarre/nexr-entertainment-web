@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 4rem;
 
     .videoContainer {
       display: flex;
@@ -34,20 +35,21 @@
           height: 100%;
           object-fit: cover;
           position: absolute;
-          top: 63px;
           left: 90px;
         }
       }
     }
 
     .textContent {
-
+      width: 100%;
       .newText {
         font-size: 32px;
         font-weight: 700;
         line-height: 1.5rem;
         color: white;
         text-align: center;
+        letter-spacing: 10px;
+        padding-left: 2px;
       }
     }
   }
