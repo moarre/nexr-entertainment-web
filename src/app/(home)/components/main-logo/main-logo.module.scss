@@ -6,21 +6,22 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: black;
+  background-image: linear-gradient( rgb(42, 129, 173), rgb(14, 36, 43));
+  // background-image: linear-gradient( rgb(2, 17, 26), rgb(21, 78, 97));
 
   .landingContent {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 4rem;
+    gap: 0.5rem;
 
     .videoContainer {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 390px;
-      height: 200px;
+      width: 400px;
+      height: 400px;
       position: relative;
 
       .videoWrapper {
@@ -35,7 +36,8 @@
           height: 100%;
           object-fit: cover;
           position: absolute;
-          left: 90px;
+          left: 45px;
+          filter: brightness(300%);
         }
       }
     }
@@ -49,7 +51,6 @@
         color: white;
         text-align: center;
         letter-spacing: 10px;
-        padding-left: 2px;
       }
     }
   }
