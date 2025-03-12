@@ -6,8 +6,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: linear-gradient( rgb(42, 129, 173), rgb(14, 36, 43));
-  // background-image: linear-gradient( rgb(2, 17, 26), rgb(21, 78, 97));
+  background-image: linear-gradient( rgb(4, 12, 16), rgb(12, 57, 71));
+  // background-image: linear-gradient(rgb(1, 4, 11), rgb(12, 52, 84),rgb(11, 51, 70),rgb(3, 13, 24));
 
   .landingContent {
     display: flex;
@@ -15,6 +15,9 @@
     align-items: center;
     flex-direction: column;
     gap: 0.5rem;
+    position: relative;
+    height: 100%;
+  
 
     .videoContainer {
       display: flex;
@@ -37,11 +40,10 @@
           object-fit: cover;
           position: absolute;
           left: 45px;
-          filter: brightness(300%);
+          // filter: brightness(500%);
         }
       }
     }
-
     .textContent {
       width: 100%;
       .newText {
@@ -52,6 +54,15 @@
         text-align: center;
         letter-spacing: 10px;
       }
+    }
+    .socialMediaContainer {
+      margin-top: auto;
+      position: absolute;
+      bottom: 2rem;
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
     }
   }
 }
