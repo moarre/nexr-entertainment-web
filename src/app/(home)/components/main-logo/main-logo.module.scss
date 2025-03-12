@@ -34,7 +34,6 @@
       position: absolute;
       right: 43px;
       top: 11rem;
-      z-index: 1;
     }
     
     .imageTwo {
@@ -46,34 +45,17 @@
       position: absolute;
       top: 12.1rem;
       right: 7.3rem;
-      z-index: 1;
     }
     
     .imageThreeAltWrapper {
       position: absolute;
       top: 12.1rem;
       right: 8rem;
-      z-index: 1;
     }
     
     .imageFourWrapper {
       position: absolute;
       bottom: 40px;
-      z-index: 1;
     }
   }
-}
-
-.backgroundVideo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  filter: brightness(50%);
 }
