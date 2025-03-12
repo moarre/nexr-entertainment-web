@@ -7,55 +7,77 @@
   justify-content: center;
   overflow: hidden;
   background-color: black;
+}
 
-  .landingContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 4rem;
-    position: relative;
-    height: 600px;
-    width: 432px;
+.landingContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+  height: 600px;
+  width: 432px;
+}
 
-    .imageOneWrapper {
-      position: absolute;
-      left: 39px;
-      top: 11.5rem;
-      z-index: 1;
-    }
-    
-    .imageOne {
-      width: 165px;
-      height: 230px;
-    }
-    
-    .imageTwoWrapper {
-      position: absolute;
-      right: 43px;
-      top: 11rem;
-    }
-    
-    .imageTwo {
-      width: 276px;
-      height: 236px;
-    }
-    
-    .imageThreeWrapper {
-      position: absolute;
-      top: 12.1rem;
-      right: 7.3rem;
-    }
-    
-    .imageThreeAltWrapper {
-      position: absolute;
-      top: 12.1rem;
-      right: 8rem;
-    }
-    
-    .imageFourWrapper {
-      position: absolute;
-      bottom: 40px;
-    }
-  }
+/* Wrapper positions remain the same */
+.imageOneWrapper {
+  position: absolute;
+  left: 39px;
+  top: 11.5rem;
+  z-index: 1;
+}
+
+.imageTwoWrapper {
+  position: absolute;
+  right: 43px;
+  top: 11rem;
+  z-index: 2;
+}
+
+.imageThreeWrapper {
+  position: absolute;
+  top: 12.05rem;
+  right: 6.1rem;
+  z-index: 1;
+}
+
+.imageFourWrapper {
+  position: absolute;
+  bottom: 40px;
+  width: 345px;
+}
+
+/* These classes now force the video to match the exact dimensions 
+   that Next Image provided */
+.imageOne,
+.imageTwo,
+.imageThree,
+.imageFour {
+  display: block;
+  width: 100%;    /* Inherits width from the wrapper defined below */
+  height: 100%;   /* Inherits height from the wrapper defined below */
+  object-fit: cover;
+}
+
+/* Ensure the wrappers have the same dimensions as before */
+.imageOne {
+  width: 165px;
+  height: 230px;
+}
+
+.imageTwo {
+  width: 276px;
+  height: 236px;
+}
+
+.imageThree {
+  width: 100px;
+  height: 70px;
+  opacity: 0.4;
+}
+
+.imageFour {
+  width: 345px;
+  height: 125px;
 }
