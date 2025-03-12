@@ -7,8 +7,24 @@ import image2 from '../../../../../public/2.svg';
 import image3 from '../../../../../public/3.svg';
 import image4 from '../../../../../public/4.svg';
 
-const imageVariants = {
-  hidden: { opacity: 0, y: 30 },
+// Define different variants for each direction
+const imageOneVariants = {
+  hidden: { opacity: 0, x: 100 },  // from right
+  visible: { opacity: 1, x: 0 },
+};
+
+const imageTwoVariants = {
+  hidden: { opacity: 0, x: -100 },  // from left
+  visible: { opacity: 1, x: 0 },
+};
+
+const imageThreeVariants = {
+  hidden: { opacity: 0, y: -100 },  // from top
+  visible: { opacity: 1, y: 0 },
+};
+
+const imageFourVariants = {
+  hidden: { opacity: 0, y: 100 },  // from bottom
   visible: { opacity: 1, y: 0 },
 };
 
@@ -19,7 +35,7 @@ const NEXRVideo: React.FC = () => {
         <motion.div
           initial="hidden"
           animate="visible"
-          variants={imageVariants}
+          variants={imageOneVariants}
           transition={{ duration: 0.7, delay: 0 }}
           className={styles.imageOneWrapper}
         >
@@ -29,7 +45,7 @@ const NEXRVideo: React.FC = () => {
         <motion.div
           initial="hidden"
           animate="visible"
-          variants={imageVariants}
+          variants={imageTwoVariants}
           transition={{ duration: 0.7, delay: 0.3 }}
           className={styles.imageTwoWrapper}
         >
@@ -39,7 +55,7 @@ const NEXRVideo: React.FC = () => {
         <motion.div
           initial="hidden"
           animate="visible"
-          variants={imageVariants}
+          variants={imageThreeVariants}
           transition={{ duration: 0.7, delay: 0.6 }}
           className={styles.imageThreeWrapper}
         >
@@ -49,7 +65,7 @@ const NEXRVideo: React.FC = () => {
         <motion.div
           initial="hidden"
           animate="visible"
-          variants={imageVariants}
+          variants={imageThreeVariants}
           transition={{ duration: 0.7, delay: 0.9 }}
           className={styles.imageThreeAltWrapper}
         >
@@ -59,7 +75,7 @@ const NEXRVideo: React.FC = () => {
         <motion.div
           initial="hidden"
           animate="visible"
-          variants={imageVariants}
+          variants={imageFourVariants}
           transition={{ duration: 0.7, delay: 1.2 }}
           className={styles.imageFourWrapper}
         >
