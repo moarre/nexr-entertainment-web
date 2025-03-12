@@ -3,10 +3,12 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   background-color: black;
+  gap: 2rem;
 
   .landingContent {
     display: flex;
@@ -44,14 +46,14 @@
     
     .imageThreeWrapper {
       position: absolute;
-      top: 12.1rem;
+      top: 12.047rem;
       right: 7.3rem;
       z-index: 1;
     }
     
     .imageThreeAltWrapper {
       position: absolute;
-      top: 12.1rem;
+      top: 12.047rem;
       right: 8rem;
       z-index: 1;
     }
@@ -60,6 +62,25 @@
       position: absolute;
       bottom: 40px;
       z-index: 1;
+      filter: brightness(200%);
+    }
+
+  }
+  .socialMediaContainer {
+    margin-top: auto;
+    // position: absolute;
+    // bottom: 2rem;
+    // width: 3rem;
+    // gap: 3rem;
+    // width: 20rem;
+    z-index: 1;
+    
+    .socialMediaInnerDiv {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 20rem;
+      padding: 2rem;
     }
   }
 }
