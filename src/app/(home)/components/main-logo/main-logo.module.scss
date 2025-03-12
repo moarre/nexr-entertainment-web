@@ -18,30 +18,42 @@
     height: 600px;
     width: 432px;
 
-    .imageOne {
+    .imageOneWrapper {
       position: absolute;
       left: 39px;
+      top: 11.5rem;
+      z-index: 1;
+    }
+    
+    .imageOne {
       width: 165px;
       height: 230px;
     }
-    .imageTwo {
+    
+    .imageTwoWrapper {
       position: absolute;
       right: 43px;
       top: 11rem;
+    }
+    
+    .imageTwo {
       width: 276px;
       height: 236px;
     }
-    .imageThree {
+    
+    .imageThreeWrapper {
       position: absolute;
       top: 12.1rem;
       right: 7.3rem;
     }
-    .imageThreeAlt {
+    
+    .imageThreeAltWrapper {
       position: absolute;
       top: 12.1rem;
       right: 8rem;
     }
-    .imageFour {
+    
+    .imageFourWrapper {
       position: absolute;
       bottom: 40px;
     }
