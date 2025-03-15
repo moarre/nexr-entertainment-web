@@ -10,77 +10,110 @@
   background-color: black;
   gap: 2rem;
 
-  .landingContent {
+  .landingContainer {
+    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    gap: 4rem;
+    margin: 2rem;
     position: relative;
-    height: 600px;
-    width: 432px;
-
-    .imageOneWrapper {
-      position: absolute;
-      left: 39px;
-      top: 11.5rem;
-      z-index: 1;
-    }
-    
-    .imageOne {
-      width: 165px;
-      height: 230px;
-    }
-    
-    .imageTwoWrapper {
-      position: absolute;
-      right: 43px;
-      top: 11rem;
-      z-index: 1;
-    }
-    
-    .imageTwo {
-      width: 276px;
-      height: 236px;
-    }
-    
-    .imageThreeWrapper {
-      position: absolute;
-      top: 12.047rem;
-      right: 7.3rem;
-      z-index: 1;
-    }
-    
-    .imageThreeAltWrapper {
-      position: absolute;
-      top: 12.047rem;
-      right: 8rem;
-      z-index: 1;
-    }
-    
-    .imageFourWrapper {
-      position: absolute;
-      bottom: 40px;
-      z-index: 1;
-      filter: brightness(200%);
-    }
-
-  }
-  .socialMediaContainer {
-    margin-top: auto;
-    // position: absolute;
-    // bottom: 2rem;
-    // width: 3rem;
-    // gap: 3rem;
-    // width: 20rem;
-    z-index: 1;
-    
-    .socialMediaInnerDiv {
+    .landingContent {
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 20rem;
-      padding: 2rem;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 4rem;
+      position: relative;
+      height: 600px;
+      width: 432px;
+      margin-top: -180px;
+  
+      .imageOneWrapper {
+        position: absolute;
+        left: 39px;
+        top: 11.5rem;
+        z-index: 1;
+      }
+      
+      .imageOne {
+        width: 165px;
+        height: 230px;
+      }
+      
+      .imageTwoWrapper {
+        position: absolute;
+        right: 43px;
+        top: 11rem;
+        z-index: 1;
+      }
+      
+      .imageTwo {
+        width: 276px;
+        height: 236px;
+      }
+      
+      .imageThreeWrapper {
+        position: absolute;
+        top: 12.047rem;
+        right: 7.3rem;
+        z-index: 1;
+      }
+      
+      .imageThreeAltWrapper {
+        position: absolute;
+        top: 12.047rem;
+        right: 8rem;
+        z-index: 1;
+      }
+      
+      .imageFourWrapper {
+        position: absolute;
+        bottom: 40px;
+        z-index: 1;
+        filter: brightness(200%);
+      }
+    }
+
+    .socialMediaContainer {
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+      position: absolute;
+      bottom: 0;
+
+      .contactSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+
+        .emailLink {
+          color: #fff;
+          text-decoration: underline;
+          margin-left: 5px;
+          transition: color 0.3s ease;
+          font-weight: 700;
+      
+          &:hover {
+              color: #00aaff;
+          }
+        }
+      }
+      
+      .socialMediaInnerDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 20rem;
+        padding: 2rem;
+        div {
+          cursor: pointer;
+        }
+      }
     }
   }
 }
@@ -97,4 +130,65 @@
   transform: translate(-50%, -50%);
   object-fit: cover;
   filter: brightness(50%);
+}
+
+@media (max-width: 768px) {
+  .container {
+    .landingContainer {
+      padding: 1rem;
+
+      .landingContent {
+        .imageOneWrapper {
+          top: 17rem;
+          left: 5rem;
+          .imageOne {
+            width: 140px;
+            height: 161px;
+          }
+        }
+
+        .imageTwoWrapper {
+          top: 15.9rem;
+          right: 6rem;
+          .imageTwo {
+            width: 190px;
+            height: 190px;
+          }
+        }
+
+        .imageThreeWrapper {
+          top: 16.95rem;
+          right: 8.2rem;
+          .imageThree {
+            width: 50px;
+            height: 50px;
+          }
+        }
+
+        .imageThreeAltWrapper {
+          top: 16.95rem;
+          right: 9.5rem;
+          .imageThreeAlt {
+            width: 50px;
+            height: 50px;
+          }
+        }
+
+        .imageFourWrapper {
+          .imageFour {
+            width: 250px;
+          }
+        }
+      }
+
+      .socialMediaContainer {
+        position: relative;
+
+        .contactSection {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
 }
