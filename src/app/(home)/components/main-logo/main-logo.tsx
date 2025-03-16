@@ -10,12 +10,12 @@ import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 // Define different variants for each direction
 const imageOneVariants = {
-    hidden: { opacity: 0, x: -150 },
+    hidden: { opacity: 0, x: -300 },
     visible: { opacity: 1, x: 0 }
 };
 
 const imageTwoVariants = {
-    hidden: { opacity: 0, x: 150 },
+    hidden: { opacity: 0, x: 300 },
     visible: { opacity: 1, x: 0 }
 };
 
