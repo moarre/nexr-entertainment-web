@@ -4,7 +4,7 @@ import styles from "./main-logo.module.scss";
 import Image from "next/image";
 import image1 from "../../../../../public/1.svg";
 import image2 from "../../../../../public/2.svg";
-import image3 from "../../../../../public/3.svg";
+import Rectangle2 from "../../../../../public/Rectangle2.svg";
 import image4 from "../../../../../public/4.svg";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 
@@ -42,11 +42,20 @@ const NEXRVideo: React.FC = () => {
                     <motion.div
                         initial="hidden"
                         animate="visible"
-                        variants={imageTwoVariants}
-                        transition={{ duration: 0.7, delay: 0.3 }}
-                        className={styles.imageTwoWrapper}>
-                        <Image className={styles.imageTwo} src={image2} alt="image2" />
+                        variants={imageThreeVariants}
+                        transition={{ duration: 0.2, delay: 0.9 }}
+                        className={styles.imageThreeWrapper}>
+                        <Image className={styles.imageThree} src={Rectangle2} alt="image3"/>
                     </motion.div>
+
+                    {/* <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        variants={imageThreeVariants}
+                        transition={{ duration: 0.2, delay: 0.9 }}
+                        className={styles.imageThreeAltWrapper}>
+                        <Image className={styles.imageThreeAlt} src={image3} alt="image3alt" />
+                    </motion.div> */}
 
                     <motion.div
                         initial="hidden"
@@ -60,19 +69,10 @@ const NEXRVideo: React.FC = () => {
                     <motion.div
                         initial="hidden"
                         animate="visible"
-                        variants={imageThreeVariants}
-                        transition={{ duration: 0.2, delay: 0.9 }}
-                        className={styles.imageThreeWrapper}>
-                        <Image className={styles.imageThree} src={image3} alt="image3" />
-                    </motion.div>
-
-                    <motion.div
-                        initial="hidden"
-                        animate="visible"
-                        variants={imageThreeVariants}
-                        transition={{ duration: 0.2, delay: 0.9 }}
-                        className={styles.imageThreeAltWrapper}>
-                        <Image className={styles.imageThreeAlt} src={image3} alt="image3alt" />
+                        variants={imageTwoVariants}
+                        transition={{ duration: 0.7, delay: 0.4 }}
+                        className={styles.imageTwoWrapper}>
+                        <Image className={styles.imageTwo} src={image2} alt="image2" />
                     </motion.div>
 
                     <motion.div
