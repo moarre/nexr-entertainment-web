@@ -6,7 +6,6 @@ import image1 from "../../../../../public/1.svg";
 import image2 from "../../../../../public/2.svg";
 import Rectangle2 from "../../../../../public/Rectangle2.svg";
 import image4 from "../../../../../public/4.svg";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 // Define different variants for each direction
 const imageOneVariants = {
@@ -45,17 +44,8 @@ const NEXRVideo: React.FC = () => {
                         variants={imageThreeVariants}
                         transition={{ duration: 0.2, delay: 0.9 }}
                         className={styles.imageThreeWrapper}>
-                        <Image className={styles.imageThree} src={Rectangle2} alt="image3"/>
+                        <Image className={styles.imageThree} src={Rectangle2} alt="image3" />
                     </motion.div>
-
-                    {/* <motion.div
-                        initial="hidden"
-                        animate="visible"
-                        variants={imageThreeVariants}
-                        transition={{ duration: 0.2, delay: 0.9 }}
-                        className={styles.imageThreeAltWrapper}>
-                        <Image className={styles.imageThreeAlt} src={image3} alt="image3alt" />
-                    </motion.div> */}
 
                     <motion.div
                         initial="hidden"
@@ -91,32 +81,12 @@ const NEXRVideo: React.FC = () => {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, ease: "circOut", delay: 1.7 }}>
                         <div className={styles.contactSection}>
-                            Have questions? Email us at
+                            <div className={styles.bottomTitle}>WATCH THIS SPACE</div>
                             <a href="mailto:hello@nexrentertainment.com" className={styles.emailLink}>
                                 hello@nexrentertainment.com
                             </a>
                         </div>
                     </motion.div>
-                    <div className={styles.socialMediaInnerDiv}>
-                        <motion.div
-                            initial={{ y: 200, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 0.5, ease: "circOut", delay: 1.2 }}>
-                            <Facebook strokeWidth={0.75} />
-                        </motion.div>
-                        <motion.div
-                            initial={{ y: 200, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 0.5, ease: "circOut", delay: 1.4 }}>
-                            <Instagram strokeWidth={0.75} />
-                        </motion.div>
-                        <motion.div
-                            initial={{ y: 200, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 0.5, ease: "circOut", delay: 1.6 }}>
-                            <Linkedin strokeWidth={0.75} />
-                        </motion.div>
-                    </div>
                 </div>
             </div>
         </div>
