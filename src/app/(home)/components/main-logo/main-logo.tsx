@@ -4,12 +4,12 @@ import styles from "./main-logo.module.scss";
 import Image from "next/image";
 import image1 from "../../../../../public/1.svg";
 import image2 from "../../../../../public/2.svg";
-import Rectangle2 from "../../../../../public/Rectangle2.svg";
+import Rectangle5 from "../../../../../public/Rectangle5.svg";
 import image4 from "../../../../../public/4.svg";
 
 // Define different variants for each direction
 const imageOneVariants = {
-    hidden: { opacity: 0, x: -300 },
+    hidden: { opacity: 0, x: -350 },
     visible: { opacity: 1, x: 0 }
 };
 
@@ -32,9 +32,9 @@ const NEXRVideo: React.FC = () => {
     return (
         <div className={styles.container}>
             <div style={{ position: "absolute", width: "100%", height: "100%" }}>
-                <video autoPlay loop muted className={styles.backgroundVideo}>
+                {/* <video autoPlay loop muted className={styles.backgroundVideo}>
                     <source src="/vr-video.mp4" type="video/mp4" />
-                </video>
+                </video> */}
             </div>
             <div className={styles.landingContainer}>
                 <div className={styles.landingContent}>
@@ -44,7 +44,7 @@ const NEXRVideo: React.FC = () => {
                         variants={imageThreeVariants}
                         transition={{ duration: 0.2, delay: 0.9 }}
                         className={styles.imageThreeWrapper}>
-                        <Image className={styles.imageThree} src={Rectangle2} alt="image3" />
+                        <Image className={styles.imageThree} src={Rectangle5} alt="rectangle5" />
                     </motion.div>
 
                     <motion.div
